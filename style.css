@@ -74,10 +74,13 @@ pre {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .btn {
     display: block;
+    max-width: 90%; 
     width: 300px;
     height: 50px;
     border-radius: 10px;
@@ -92,6 +95,26 @@ ul {
 }
 
 .btn:hover{
+    background-color:#baf1ff;
+    color: rgb(68, 39, 39);
+}
+
+.btnfirst{
+    display: block;
+    max-width: 90%; 
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    background-color:rgb(68, 39, 39) ;
+    color: #baf1ff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+.btnfirst:hover{
     background-color:#baf1ff;
     color: rgb(68, 39, 39);
 }
