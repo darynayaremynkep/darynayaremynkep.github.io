@@ -93,3 +93,8 @@ ul {
     background-color:#baf1ff;
     color: rgb(68, 39, 39);
 }
+.title {
+    text-align: center;
+    margin-top: 30px;
+}
+
