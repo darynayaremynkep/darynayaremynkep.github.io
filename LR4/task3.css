@@ -1,0 +1,16 @@
+.title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.title::before,
+.title::after {
+    content: "";
+    display: inline-block;
+    width: 600px;
+    height: 4px;
+    background: black;
+    vertical-align: middle;
+    margin: 0 15px;
+}

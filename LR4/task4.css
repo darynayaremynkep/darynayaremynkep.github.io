@@ -1,0 +1,41 @@
+.battery {
+  position: relative;     
+  width: 250px;
+  height: 90px;
+  border: 4px solid black; 
+  margin: 20px auto;
+}
+
+.battery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;         
+}
+
+.battery.red::before {
+  background: red;
+  width: 30%;
+}
+
+.battery.yellow::before {
+  background: yellow;
+  width: 65%;
+}
+
+.battery.green::before {
+  background: green;
+  width: 100%;
+}
+
+.battery::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: -12px;         
+  width: 12px;
+  height: 50%;
+  background: black;
+  border-radius: 2px;
+}
