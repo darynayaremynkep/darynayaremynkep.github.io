@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.mark-table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 700px;
+    background-color: #dcedc8;
+}
+
+.mark-table th,
+.mark-table td {
+    border: 2px solid black;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+.mark-table .title {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mark-table .header th {
+    background-color: #a5d6a7;
+}
+
+.mark-table tr:not(:first-child) td:nth-child(odd),
+.mark-table tr:not(:first-child) th:nth-child(odd) {
+    background-color: #dcedc8;
+}
+
+.mark-table tr:not(:first-child) td:nth-child(even),
+.mark-table tr:not(:first-child) th:nth-child(even) {
+    background-color: #c5e1a5;
+}

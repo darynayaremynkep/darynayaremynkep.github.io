@@ -1,0 +1,84 @@
+body {
+    margin: 0  auto;
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+    
+}
+
+.container {
+    width: 960px;
+    margin: 60px auto;
+}
+
+.card {
+    width: 250px;
+    float: left;
+    margin-right: 40px;
+    border-collapse: collapse;
+}
+
+.card-tiny { box-shadow: 0 0 0 2px #138d75; }
+.card-small { box-shadow: 0 0 0 2px #d68910; }
+.card-medium { box-shadow: 0 0 0 2px #a93226; }
+
+.card:last-child { margin-right: 0; }
+
+.top {
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 25px 0 15px;
+    border-bottom: 45px solid rgba(0,0,0,0.08);
+}
+
+.top span {
+    display: block;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.tiny { background: #16a085; }
+.small { background: #f39c12; }
+.medium { background: #c0392b; }
+
+.content {
+    background: #f7f7f7;
+    text-align: center;
+    padding: 25px 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+.separator {
+    border-top: 1px dotted #bbb;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.btn-tiny { background: #16a085; }
+.btn-small { background: #f39c12; }
+.btn-medium { background: #c0392b; }
+
+.bottom {
+    height: 8px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

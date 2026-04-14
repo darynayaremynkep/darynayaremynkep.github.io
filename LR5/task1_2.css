@@ -1,0 +1,40 @@
+.table2 {
+    width: 700px;
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-family: Arial;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.col {
+    float: left;
+    width: 20%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.header .col {
+    background: #58b3dd;
+    color: white;
+}
+
+.row:not(.header) .col {
+    background: #bddef1;
+}
+
+
+.row:not(.header) .col.first {
+    background: #58b3dd;
+    color: white;
+    text-align: left;
+    padding-left: 15px;
+}
+
