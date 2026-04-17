@@ -1,0 +1,135 @@
+.main-container {
+    padding: 20px;
+}
+
+.calculator {
+    width: 280px;
+    height: 450px;
+    border: 2px solid #77a5a9;
+    border-radius: 15px;
+    background: #fff;
+    margin-right: 50px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    height: 10px;
+    background: #fff;
+    border-bottom: 1px solid #77a5a9;
+}
+
+.header {
+    background: #77a5a9;
+    color: #fff;
+    text-align: right;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.body {
+    padding: 15px;
+}
+
+.input-field {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #77a5a9;
+    border-radius: 4px;
+    text-align: right;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #77a5a9;
+    margin-bottom: 5px;
+}
+
+.solar {
+    width: 70px;
+    height: 30px;
+    background: #77a5a9;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #77a5a9;
+    border-radius: 10px;
+    background: #fff;
+    color: #77a5a9;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f0fafa;
+}
+
+button:active {
+    background: #d0e8e9;
+    scale: 0.95;
+}
+
+.calc-float {
+    float: left;
+}
+
+.calc-float button {
+    float: left;
+    margin: 5px;
+}
+
+.calc-pos {
+    float: left;
+    position: relative;
+}
+
+.btns-pos {
+    position: relative;
+    height: 250px;
+}
+
+.btns-pos button {
+    position: absolute;
+}
+
+.r1 {
+    top: 0;
+}
+
+.r2 {
+    top: 60px;
+}
+
+.r3 {
+    top: 120px;
+}
+
+.r4 {
+    top: 180px;
+}
+
+.c1 {
+    left: 5px;
+}
+
+.c2 {
+    left: 65px;
+}
+
+.c3 {
+    left: 125px;
+}
+
+.c4 {
+    left: 185px;
+}
+
+.main-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}

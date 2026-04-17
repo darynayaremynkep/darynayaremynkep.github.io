@@ -1,0 +1,134 @@
+.outer-bg {
+    background: #2b2525;
+    padding: 100px 0;
+    font-family: 'Times New Roman', serif;
+}
+
+.menu-wrapper {
+    width: 920px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.promo-side {
+    float: left;
+    width: 38%;
+    height: 480px;
+    position: relative;
+}
+
+.promo-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.black-label {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    background: #000;
+    color: #fff;
+    padding: 30px;
+    width: 100%;
+    z-index: 5;
+    box-sizing: border-box;
+}
+
+.black-label h1 {
+    margin: 0;
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: 0.8;
+    text-align: center;
+}
+
+.black-label p {
+    margin: 10px 0 0;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.yellow-text {
+    color: #fcc200;
+}
+
+.list-side {
+    float: right;
+    width: 62%;
+    padding: 40px 40px 20px 60px;
+    box-sizing: border-box;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.dish {
+    float: left;
+    width: 46%;
+    margin: 0 2% 0 2%;
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+}
+
+.dish::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: #f0f0f0;
+}
+
+.dish::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    width: 10px;
+    height: 10px;
+    background: #e5e5e5;
+    transform: rotate(45deg);
+}
+
+.dish h3 {
+    font-size: 17px;
+    font-weight: normal;
+    margin: 0;
+    color: #222;
+}
+
+.dish p {
+    font-size: 14px;
+    color: #aaa;
+    margin: 8px 0 0;
+    font-family: sans-serif;
+}
+
+.main-btn {
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+    background: #000;
+    color: #fff;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.clearfix {
+    clear: both;
+}
