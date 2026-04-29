@@ -56,6 +56,8 @@ body {
 .right {
     width: 70%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -126,4 +128,51 @@ ul {
 address a{
 color:  #f2f2f2;
 text-decoration: none;
+}
+
+.social-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+
+.social-footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #baf1ff;
+    transition: 0.3s;
+}
+
+.social-footer a:hover {
+    background: rgb(68, 39, 39);
+    transform: translateY(-3px);
+}
+
+.social-footer svg {
+    width: 22px;
+    height: 22px;
+    fill: rgb(68, 39, 39);
+}
+
+.social-footer a:hover svg {
+    fill: white;
+}
+footer {
+    margin-top: 30px;
+}
+
+footer address a {
+    color: rgb(68, 39, 39);
+    text-decoration: none;
+}
+
+footer address a:hover {
+    text-decoration: underline;
 }
