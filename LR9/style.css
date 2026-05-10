@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 32px;
+    color: #4ea5ff;
+    font-weight: 500;
+}
+
+.nav__list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav__link {
+    color: #999;
+    transition: 0.3s;
+}
+
+.nav__link:hover {
+    color: #333;
+}
+
+.hero {
+    height: 500px;
+    background: url('jumbotron.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero__title {
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 40px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.btn--primary {
+    background-color: #f553a2;
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #df438f;
+}
+
+.services {
+    padding: 70px 0;
+}
+
+.services__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.service-card {
+    text-align: center;
+}
+
+.service-card__icon {
+    font-size: 50px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.service-card__text {
+    color: #999;
+}
+
+.blog {
+    padding: 70px 0;
+}
+
+.blog__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.blog-card__title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.blog-card__date {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #aaa;
+}
+
+.blog-card__text {
+    color: #999;
+}
+
+.footer {
+    background-color: #3b4352;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer__logo {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.footer__nav {
+    margin-bottom: 25px;
+}
+
+.footer__copyright {
+    color: #d5d5d5;
+    font-size: 14px;
+}
+
+@media(min-width: 768px) {
+
+    .header__content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        height: 650px;
+    }
+
+    .hero__title {
+        font-size: 64px;
+    }
+
+    .section-title {
+        font-size: 42px;
+    }
+
+    .services {
+        padding: 120px 0;
+    }
+
+    .services__wrapper {
+        flex-direction: row;
+    }
+
+    .service-card__text,
+    .blog-card__text {
+        font-size: 20px;
+    }
+
+    .blog {
+        padding: 120px 0;
+    }
+
+    .blog-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .blog-card__image {
+        width: 320px;
+    }
+
+    .blog-card__title {
+        font-size: 42px;
+    }
+}
