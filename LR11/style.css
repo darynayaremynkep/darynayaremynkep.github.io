@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #f5f6ff; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+.phone {
+    width: 100%;
+    max-width: 375px;
+    min-height: 100vh;
+    background: #f5f6ff; 
+    position: relative;
+    overflow: hidden;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 85px;
+    font-weight: 400;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    transform: scaleY(1.15);
+}
+.title-up {
+    color: #2d2dff;
+}
+.title-down {
+    position: absolute;
+    top: -42px;
+    left: 0;
+    color: #c9d4ff;
+    clip-path: inset(48% 0 0 0);
+    z-index: 1;
+}
+.form-card {
+    background: white;
+    border-radius: 30px 30px 0 0;
+        margin-top: 45px; 
+        padding: 30px 20px 110px;
+    flex-grow: 1;
+    position: relative;
+    z-index: 2; 
+   background:
+    linear-gradient(
+        to top,
+        rgba(43,38,255,0.25) 0%,
+        transparent 120px
+    ),
+    white;
+  
+}
+
+.submitted {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;   
+    text-align: center;      
+    min-height: 100vh;       
+    padding: 0 24px;          
+    position: relative;       
+    background: #f5f6ff;      
+}
+
+.submitted .title-down {
+    position: absolute;       
+}
+
+.submitted h3 {
+    font-size: 26px;         
+    color: #000000;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 16px;      
+    margin-top: 60px;        
+    z-index: 2;               
+}
+
+.submitted p {
+    font-size: 15px;
+    color: #333333;
+    line-height: 1.5;
+    font-weight: 400;
+    z-index: 2;               
+}
+.question{
+    font-family: 'Poppins';
+  margin-top: 30px;
+    background: white;
+    width: fit-content;
+    max-width: 85%;
+    padding: 20px 20px;
+    border-radius: 24px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  background: transparent;
+  
+ 
+}
+
+input{
+    width: 80%;
+    margin-left: auto;
+    display: block;
+    border: none;
+    background: #d4deff;
+    color: #2b26ff;
+    padding: 14px 20px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+input::placeholder{
+    color: #2b26ff;
+    opacity: 0.7;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+    width: 90%;
+    margin-left: auto;
+    margin-bottom: 24px;
+    padding-right: 5px;
+}
+
+.tags label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: 1px solid #4d66ff;
+    background: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.2s ease;
+}
+
+.tags label::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #4d66ff;
+    border-radius: 50%;
+}
+
+.tags input[type="radio"]:checked + label {
+    background: #4d66ff;
+    color: white;
+}
+.tags input[type="radio"]:checked + label::before {
+    background: white;
+    border-color: white;
+}
+
+.tags input[type="radio"] {
+    display: none;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;  
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.send-btn{
+    border: none;
+    background: #2b26ff;
+    color: white;
+    padding: 16px 0;
+    width: 85%;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(43, 38, 255, 0.2);
+}
+
+.standard-btn {
+    opacity: 0.9;
+    cursor: default;
+}
